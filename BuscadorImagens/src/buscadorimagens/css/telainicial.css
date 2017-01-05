@@ -1,0 +1,68 @@
+
+.mainFxmlClass {
+    -fx-background-color: rgb(3, 109, 175);
+}
+#mainPane{
+    -fx-background-color: rgb(3, 109, 175);
+}
+#anchorGrid{
+    -fx-background-color: rgb(154,210,232);
+}
+#checkBoxDownload{
+  -fx-background-image: url('save-0.png');
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: right center;
+  -fx-background-size: 40%;
+}
+#sa {
+    -fx-background-color: rgb(228, 179, 0);
+}
+#MenuButton{
+    -fx-background-color: transparent;
+}
+#MenuItem{
+    -fx-background-color: transparent;
+}
+#MenuItem:hover{
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane{
+    -fx-tab-min-width:90px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+
+.tab-pane .tab{
+    -fx-background-color: #e6e6e6;
+
+}
+
+.tab-pane .tab:selected{
+    -fx-background-color: rgb(154,210,232);
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+
+}
+#copyable-label, #copyable-label:focused {
+    -fx-background-color: rgba(0,0,0,10);
+    -fx-background-insets: 0px ;
+}

@@ -1,0 +1,12 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-font: 20px "Tahoma";
+    -fx-background-color: rgb(3, 109, 175);
+}
+.button {
+    -fx-background-color: rgb(228, 179, 0);
+    -fx-text-fill: rgb(255,255,255);
+}

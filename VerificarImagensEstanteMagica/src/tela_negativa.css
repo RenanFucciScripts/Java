@@ -1,0 +1,13 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: rgb(3, 109, 175);
+}
+.button {
+    -fx-background-color: rgb(228, 179, 0);
+}
+.scroll-pane > .viewport {
+   -fx-background-color: rgb(154,210,232);
+}

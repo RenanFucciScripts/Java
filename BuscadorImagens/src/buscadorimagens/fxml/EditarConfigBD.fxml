@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="scrollPaneMain" fitToHeight="true" fitToWidth="true" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+    <content>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="mainFxmlClass">
+         <children>
+            <BorderPane layoutX="166.0" layoutY="78.0" prefHeight="869.0" prefWidth="972.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_LEFT">
+                     <image>
+                        <Image url="@../imgs/icon-02-esq.png" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets left="15.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </left>
+               <right>
+                  <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_RIGHT">
+                     <image>
+                        <Image url="@../imgs/icon-02-dir.png" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets right="15.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </right>
+               <center>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../imgs/icon-01.png" />
+                           </image>
+                        </ImageView>
+                     </top>
+                     <center>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <center>
+                              <GridPane fx:id="mGridPane" alignment="TOP_CENTER" vgap="25.0" BorderPane.alignment="TOP_CENTER">
+                                <columnConstraints>
+                                  <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="-Infinity" minWidth="10.0" prefWidth="400.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="-Infinity" minWidth="10.0" prefWidth="400.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" />
+                                  <RowConstraints />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                </rowConstraints>
+                                 <children>
+                                    <Label alignment="TOP_CENTER" text="Editar Configuracões Banco de Dados" textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.columnSpan="2147483647">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="mTxtField_NomeBD" maxHeight="-Infinity" maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="mTxtField_User" maxHeight="-Infinity" maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <Button id="sa" fx:id="mBtn_salvar" contentDisplay="CENTER" mnemonicParsing="false" text="SALVAR" textFill="WHITE" GridPane.columnSpan="2147483647" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font name="Tahoma" size="18.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets top="20.0" />
+                                       </GridPane.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Label text="Nome do Banco: " textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Usuário: " textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Senha: " textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <PasswordField fx:id="mPwdField_pwd" maxHeight="-Infinity" maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="14.0" />
+                                       </font>
+                                    </PasswordField>
+                                    <Label text="IP do Host: " textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="mTxtField_IPhost" layoutX="209.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets top="50.0" />
+                                 </BorderPane.margin>
+                              </GridPane>
+                           </center>
+                        </BorderPane>
+                     </center>
+                  </BorderPane>
+               </center>
+               <top>
+        <ToolBar minHeight="25.0" prefHeight="25.0" BorderPane.alignment="CENTER">
+              <items>
+                <Button id="MenuItem" fx:id="mMenuItem_Escola" mnemonicParsing="false" onAction="#onAction_Escola" text="Escola">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="MenuItem" fx:id="mMenuItem_Crianca" mnemonicParsing="false" onAction="#onAction_Crianca" text="Criança">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="MenuItem" fx:id="mMenuItem_XML1" mnemonicParsing="false" onAction="#onAction_Arquivo" text="Arquivo">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="MenuItem" fx:id="mMenuItem_XML" layoutX="123.0" layoutY="5.0" mnemonicParsing="false" onAction="#onAction_XML" text="XML">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <MenuButton id="MenuButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Edit Config" textAlignment="CENTER">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#onAction_ConfigBD" text="    BD    " />
+                      <MenuItem mnemonicParsing="false" onAction="#onAction_ConfigFTP" text="    FTP    " />
+                    </items>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                  </MenuButton>
+              </items>
+            </ToolBar>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

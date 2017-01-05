@@ -1,0 +1,10 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: rgb(255, 255, 255);
+}
+.label {
+    -fx-text-fill: rgb(154,210,232);
+}

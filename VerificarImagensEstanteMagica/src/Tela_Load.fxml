@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="mainFxmlClass" stylesheets="@tela_load.css">
+          <children>
+            <BorderPane layoutX="166.0" layoutY="78.0" prefHeight="869.0" prefWidth="972.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_LEFT">
+                     <image>
+                        <Image url="@imgs/icon-02-esq.png" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets left="15.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </left>
+               <right>
+                  <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_RIGHT">
+                     <image>
+                        <Image url="@imgs/icon-02-dir.png" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets right="15.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </right>
+               <center>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@imgs/icon-01.png" />
+                           </image>
+                        </ImageView>
+                     </top>
+                     <center>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <center>
+                              <GridPane alignment="TOP_CENTER" BorderPane.alignment="TOP_CENTER">
+                                 <BorderPane.margin>
+                                    <Insets top="60.0" />
+                                 </BorderPane.margin>
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints valignment="TOP" />
+                                    <RowConstraints valignment="TOP" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <ImageView fx:id="imageViewLoad" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@imgs/icon-03-load.gif" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="lblSubtotalImgs" text="Label" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="30.0" />
+                                       </font></Label>
+                                 </children>
+                              </GridPane>
+                           </center>
+                        </BorderPane>
+                     </center>
+                  </BorderPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
